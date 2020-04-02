@@ -29,7 +29,7 @@ class School
     ##@roster.each do |grade, students|
       binding.pry
     ## now we can sort the students array to itself with sort!
-    students.sort
+    students.sort!
   end
   ## here we return the roster with the sorted array of students
   roster
