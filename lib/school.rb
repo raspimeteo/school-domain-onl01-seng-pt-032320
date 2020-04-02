@@ -1,4 +1,3 @@
-require 'pry'
 class School
   
   attr_accessor :roster
@@ -26,8 +25,6 @@ class School
   def sort
     ## map gives grade the value of the key and the students in an array
     @roster.map do |grade, students|
-    ##@roster.each do |grade, students|
-      binding.pry
     ## now we can sort the students array to itself with sort!
     students.sort!
   end
