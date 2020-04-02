@@ -3,15 +3,18 @@ class School
   attr_accessor :roster
     
   def initialize(name)
+    ## Set name for school
     @name = name
+    ## create empty hash for roster
     @roster = {}
   end
 
   def add_student(student_name, grade)
- ##   binding.pry
+  ## if roster for that grade doesn't exist create new array
     if @roster[grade] == nil
       @roster[grade] = []
     end
+      ## add student_name to array
       @roster[grade] << student_name
   end
   
