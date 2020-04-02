@@ -26,7 +26,7 @@ class School
     ## map gives grade the value of the key and the students in an array
     @roster.map do |grade, students|
     ## now we can sort the students array to itself with sort!
-    students = students.sort
+    students.sort!
   end
   ## here we return the roster with the sorted array of students
   roster
